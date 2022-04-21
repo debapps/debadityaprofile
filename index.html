@@ -208,69 +208,53 @@
                         <ul>
                             <li>
                                 <p>
-                                    <strong>Facebook Clone:</strong> This is clone of Facebook Login Page built with HTML and Tailwind CSS. 
-                                </p>
-                                <p>
-                                    <a class="highlight-box cursor-pointer" target="blank" href="https://github.com/debamckv/FacebookLoginPageClone">
-                                        <span class="github-color">
-                                            <i class="fab fa-github-square"></i>
-                                        </span>
-                                        GitHub Repo
-                                    </a>
-                                </p>
-                            </li>
-                            <li>
-                                <p>
                                     <strong>Check List - Your Online TODO List:</strong> 
                                     This project is Check List (To-do List) application built with React and Redux. 
                                 </p>
                                 <p>
-                                    <a class="highlight-box cursor-pointer" target="blank" href="https://github.com/debamckv/CheckList">
+                                    <a class="highlight-box cursor-pointer" target="blank" href="https://github.com/debapps/CheckListApp">
                                         <span class="github-color">
                                             <i class="fab fa-github-square"></i>
                                         </span>
                                         GitHub Repo
                                     </a>
-                                    <a class="highlight-box cursor-pointer" target="blank" href="https://debamckv.github.io/CheckList/">
+                                    <a class="highlight-box cursor-pointer" target="blank" href="https://debapps.github.io/CheckListApp/">
                                         Website Hosted in GitHub Page
                                     </a>
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    <strong>TextUtils:</strong> <strong>TextUtils</strong> is the text analyzer application which counts words, characters, sentences, paragraph of a input text. It converts input text from Uppercase to Lowercase, from lowercase to Uppercase, from markup text to html text, from html text to markup text, removes extra spaces, copy the converted text to clipboard.
+                                    <strong>TextUtilsApp:</strong> <strong>TextUtilsApp</strong> is the text analyzer application which counts words, characters, sentences, paragraph of a input text. It converts input text from Uppercase to Lowercase, from lowercase to Uppercase, from markup text to html text, from html text to markup text, removes extra spaces, copy the converted text to clipboard.
                                 </p>
                                 <p>
-                                    <a class="highlight-box cursor-pointer" target="blank" href="https://github.com/debamckv/TextUtilsReact.git">
+                                    <a class="highlight-box cursor-pointer" target="blank" href="https://github.com/debapps/TextUtilsApp">
                                         <span class="github-color">
                                             <i class="fab fa-github-square"></i>
                                         </span>
                                         GitHub Repo
                                     </a>
-                                    <a class="highlight-box cursor-pointer" target="blank" href="https://debamckv.github.io/TextUtilsReact/">Website hosted on GitHub Pages</a>
+                                    <a class="highlight-box cursor-pointer" target="blank" href="https://debapps.github.io/TextUtilsApp/">
+                                        Website hosted on GitHub Pages
+                                    </a>
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    <strong>CloudNote:</strong> <strong>CloudNote</strong> is a secure, cloud-based Note keeping application. User can Sign Up/Log in with the email and password. User can add/edit/delete their notes in this application. The Application is built on MERN stack (MongoDB Atlas, Express JS, React JS, Node JS). It uses <strong>password hash-encryption</strong> to protect user passwords, <strong>JWT tokens</strong> for user authentication and <strong>React Context API</strong> for session management. All the data stored in MongoDB Atlas on Cloud so that user data is available everywhere. The Backend server used <strong>REST API</strong> for data handling. 
+                                    <strong>CloudNoteApp :</strong> <strong>CloudNoteApp</strong> is a secure, cloud-based Note keeping application. User can Sign Up/Log in with the email and password. User can add/edit/delete their notes in this application. The Application is built on MERN stack (MongoDB Atlas, Express JS, React JS, Node JS). It uses <strong>password hash-encryption</strong> to protect user passwords, <strong>JWT tokens</strong> for user authentication and <strong>React Context API</strong> for session management. All the data stored in MongoDB Atlas on Cloud so that user data is available everywhere. The Backend server used <strong>REST API</strong> for data handling. 
                                 </p>
                                 <p>
-                                    <a class="highlight-box cursor-pointer" target="blank" href="https://github.com/debamckv/CloudNotes-FrontEnd">
+                                    <a class="highlight-box cursor-pointer" target="blank" href="https://github.com/debapps/CloudNoteApp">
                                         <span class="github-color">
                                             <i class="fab fa-github-square"></i>
                                         </span>
-                                        Frontend GutHub Repo
+                                        GutHub Repo
                                     </a>
-                                    <a class="highlight-box cursor-pointer" target="blank" href="https://github.com/debamckv/CloudNotes-BackEnd">
-                                        <span class="github-color">
-                                            <i class="fab fa-github-square"></i>
-                                        </span>
-                                        Backend GutHub Repo
+                                    <a class="highlight-box cursor-pointer" target="blank" href="https://cloudnoteapp.herokuapp.com/">
+                                        Website hosted on Heroku
                                     </a>
-                                    <a class="highlight-box cursor-pointer" target="blank" href="https://cloudnoteapp.herokuapp.com/">Website hosted on Heroku</a>
                                 </p>
                             </li>
-                            
                         </ul>
                     </p>
                 </article>
@@ -297,7 +281,7 @@
                         <li>
                             <strong>PhotoManager</strong>: <strong>PhotoManager</strong> is a full-fledged Image browsing and Editing Software created with Python script. 
                             <p>
-                                <a class="highlight-box cursor-pointer" target="blank" href="https://github.com/debamckv/PhotoManager">
+                                <a class="highlight-box cursor-pointer" target="blank" href="https://github.com/debapps/PhotoManager">
                                     <span class="github-color">
                                         <i class="fab fa-github-square"></i>
                                     </span>
@@ -340,14 +324,19 @@
                     <i class="fab fa-instagram"></i>
                 </span>
             </a>
-            <a href="https://github.com/debamckv">
+            <a href="https://github.com/debapps">
                 <span class="github-color">
                     <i class="fab fa-github-square"></i>
                 </span>
             </a>
             </span>
-            <p>Copyright © Debaditya Bhar</p>
+            <p>Copyright © <span id="year"></span> Debaditya Bhar</p>
         </article>
     </footer>
+    <script type="application/javascript" defer>
+        const date = new Date();
+        const year = date.getFullYear();
+        document.querySelector("#year").innerHTML = year;
+    </script>
 </body>
 </html>
